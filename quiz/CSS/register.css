@@ -1,0 +1,107 @@
+body {
+  background-image: url(./istockphoto-1364994903-640x640.jpg);
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-color: #a1ccd1;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 90vh;
+  margin: 10% auto;
+  width: 30%;
+  max-width: 500px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f4f2de;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  display: block;
+  width: 80%;
+  font-weight: bold;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+form input {
+  display: block;
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+form button {
+  display: block;
+  width: 80%;
+  padding: 10px 20px;
+  background-color: #e9b384;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 3% auto;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+form button:hover {
+  background-color: #d69754;
+}
+
+#errorContainer {
+  color: red;
+  margin-top: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 705px) {
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+#quizForm #quizOptions {
+  /* width: 30%;
+            display: flex;
+            justify-content: start; */
+  margin: 3% 9%;
+}
+
+/* .imgcontainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .imgcontainer img {
+            margin-top: 3%;
+            width: 200px;
+             height: 200px; 
+        } */
