@@ -1,0 +1,97 @@
+
+/* login page  style */
+
+
+body {
+  /* font-family: Arial, sans-serif; */
+  background-color: #A1CCD1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background-color: #F4F2DE;
+  border: 2px solid #7C9D96;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  width: 80%;
+}
+
+.login-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.login-form label,
+.login-form input {
+  display: block;
+  margin-bottom: 10px;
+  width: 80%;
+  margin: 5% auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  padding: 8px;
+  border: 1px solid #7C9D96;
+  border-radius: 5px;
+}
+
+.login-form button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 2px solid #fff;
+  background-color: #E9B384;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  margin-left: 25%;
+  margin-top: 10%;
+
+}
+
+.login-form button:hover {
+  background-color: #7C9D96;
+}
+
+.register-button {
+  margin-top: 20px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+  
+}
+
+.register-button a {
+  text-decoration: none;
+  color: cadetblue;
+  font-weight: bold;
+  
+}
+
+img{
+  height: 50%;
+  width: 50%;
+  margin-left: 23%;
+  
+}
+
+.do_you{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+
