@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<!-- <div class="imgcontainer"><img src="img/quiz-logo-removebg-preview.png" alt="main-logo"></div> -->
+		<h2>Registration Form</h2>
+
+		<form id="registrationForm" onsubmit="return validateForm()">
+			<label class="labelFont" for="firstName">First Name:</label>
+			<input type="text" id="firstName" required pattern="[A-Za-z]+" title="Only letters allowed">
+
+			<label class="labelFont" for="lastName">Last Name:</label>
+			<input type="text" id="lastName" required pattern="[A-Za-z]+" title="Only letters allowed">
+
+			<label class="labelFont" for="birthdate">Birth Date:</label>
+			<input type="date" id="birthdate" required>
+
+			<label class="labelFont" for="email">Email:</label>
+			<input type="email" id="email" required>
+			<input type="email" id="confirmEmail" placeholder="Confirm Email" required>
+
+			<label class="labelFont" for="password">Password:</label>
+			<input type="password" id="password" required
+				pattern="(?=.*[A-Z])(?=.*\d{2,})(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,32}"
+				title="Password must start with a capital letter, have at least two numbers, and one special character">
+
+			<input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+
+			<label class="labelFont" for="mobile">Mobile Number:</label>
+			<input type="tel" id="mobile" required pattern="[0-9]{10}" title="Mobile number should be 10 digits">
+
+			<section id="quizForm">
+				<label class="labelFont" for="quizOptions">Choose a quiz:</label>
+				<select name="quizOptions" id="quizOptions">
+					<option value="ENGLISH">English quiz</option>
+					<option value="HTML">HTML quiz</option>
+					<option value="CSS">CSS quiz</option>
+					<option value="JAVASCRIPT">JavaScript quiz</option>
+				</select>
+			</section>
+
+			<button type="submit">Register</button>
+		</form>
+
+		<div id="errorContainer"></div>
+	</div>
+	<script src="regesteration.js"></script>
+</body>
+
+</html>
