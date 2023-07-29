@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Registration Form</title>
 	<link rel="stylesheet" href="./CSS/register.css">
+	<link rel="icon" type="image/x-icon" href="quiz-logo-removebg-preview.png">
 </head>
 
 <body>
@@ -20,8 +21,8 @@
 			<label class="labelFont" for="lastName">Last Name:</label>
 			<input type="text" id="lastName" required pattern="[A-Za-z]+" title="Only letters allowed">
 
-			<label class="labelFont" for="birthdate">Birth Date:</label>
-			<input type="date" id="birthdate" required>
+			<!-- <label class="labelFont" for="birthdate">Birth Date:</label>
+			<input type="date" id="birthdate" required> -->
 
 			<label class="labelFont" for="email">Email:</label>
 			<input type="email" id="email" required>
@@ -40,6 +41,7 @@
 			<section id="quizForm">
 				<label class="labelFont" for="quizOptions">Choose a quiz:</label>
 				<select name="quizOptions" id="quizOptions">
+					<option>select quiz</option>
 					<option value="ENGLISH">English quiz</option>
 					<option value="HTML">HTML quiz</option>
 					<option value="CSS">CSS quiz</option>
@@ -47,7 +49,7 @@
 				</select>
 			</section>
 
-			<button type="submit">Register</button>
+			<button type="submit" id="btn">Register</button>
 		</form>
 
 		<div id="errorContainer"></div>

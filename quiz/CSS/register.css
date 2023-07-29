@@ -95,13 +95,27 @@ h2 {
   margin: 3% 9%;
 }
 
-/* .imgcontainer{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .imgcontainer img {
-            margin-top: 3%;
-            width: 200px;
-             height: 200px; 
-        } */
+@media (min-width: 280px) and (max-width: 900px){
+
+  #registrationForm{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 5%;
+   
+  }
+
+  .container{
+    width: 90%;
+    max-width: 90%;
+    margin-bottom: 20%;
+    
+  }
+
+  #btn{
+
+    font-size: small;
+     margin-bottom: 70%; 
+  }
+
+ 
+}; 
